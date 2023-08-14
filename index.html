@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Random Number Generate</h1>
+    <button id="b"  onclick="button()"> Click Me</button>
+<h1 id="heading"></h1>
+<h1 id="heading2"></h1>
+<h1 id="heading3"></h1>
+
+    <script>
+        
+function button() {
+    
+let Aaraay=[6,20,50,60,13,75,9,44,99,66]
+    
+let count =[]
+    for (let index = 0; index <Aaraay.length; index++) {
+        count.push( Math.floor(Math.random()*100))
+
+    }document.getElementById('heading').innerHTML="["+count+"]"
+
+
+
+let Baraay=[5,15,25,38,49,54,66,76,84,94]
+    
+let count2 =[]
+    for (let index = 0; index <Baraay.length; index++) {
+        count2.push( Math.floor(Math.random()*100))
+
+    }document.getElementById('heading2').innerHTML="["+count2+"]"
+
+
+    let sum=[];
+    for (let index = 0; index <11; index++) {
+        
+        
+        // sum.push(count[index]+count2[index])// I do it after the test.
+        sum=count+count2//This is my mistake sir i dont gave index
+
+
+    }document.getElementById('heading3').innerHTML=sum
+}
+
+
+    </script>
+</body>
+</html>
